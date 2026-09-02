@@ -82,6 +82,8 @@ GoldSantos/
     ├── deploy_mod_stack_lan.py         # 1-Click LAN FTP Deployer to PS4
     ├── generate_156_cheat_json.py      # Cheat JSON Validator & Builder
     ├── rpf_afr_builder.py              # AFR Workspace Stager & Inspector (rpf-cli ready)
+    ├── package_release_zip.py          # Distribution Bundle Packaging Utility
+    ├── monitor_ps4_telemetry.py        # Live GoldHEN Klog & Crash Telemetry Streamer
     └── native_pattern_scanner.py       # AOB Signature & Cross-Map Helper
 ```
 
