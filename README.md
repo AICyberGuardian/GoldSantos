@@ -19,6 +19,7 @@
 [![Layer 3 AFR](https://img.shields.io/badge/Layer%203%20AFR-Staged-yellow.svg)](afr/src/)
 [![Layer 4 PRX Menu](https://img.shields.io/badge/Layer%204%20Menu-Ported%20to%201.56-blue.svg)](plugins/lotus-base/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Master Corpus](https://img.shields.io/badge/AI%20Context-Master%20Corpus-purple.svg)](GOLDSANTOS_MASTER_CORPUS.md)
 
 ---
 
@@ -53,6 +54,7 @@ Rockstar shuffles `eboot.bin` offsets, scrambles native function hashes, and shi
 ```text
 GoldSantos/
 ├── README.md                           # Master Documentation & Architecture Manual
+├── GOLDSANTOS_MASTER_CORPUS.md         # Single-File LLM Master Corpus (A to Z Architecture & Code)
 ├── LICENSE                             # MIT Open Source License
 ├── .gitignore                          # Zero-binary / DMCA compliance ignore rules
 ├── docs/                               # Technical Specifications & Reverse Engineering
