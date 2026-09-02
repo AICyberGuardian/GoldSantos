@@ -51,9 +51,9 @@ def probe_port(ip: str, port: int, timeout: float = 2.0) -> bool:
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(timeout)
-        res = s.connect_ex((ip, port))
+        s.connect((ip, port))
         s.close()
-        return res == 0
+        return True
     except Exception:
         return False
 
