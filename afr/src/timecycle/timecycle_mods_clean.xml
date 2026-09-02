@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Clean Horizon & Atmospheric Overhaul Timecycle for GTA V PS4 -->
+<!-- Injected into update.rpf / common / data / timecycle / timecycle_mods_1.xml -->
+<timecycle_modifier_data version="1.000000">
+  <modifier name="EXTRASUNNY_CLEAN_HORIZON" numMods="12" userFlags="0">
+    <light_dir_col r="1.000" g="0.950" b="0.850" a="1.000" />
+    <light_dir_mult value="1.250" />
+    <sky_zenith_col r="0.150" g="0.350" b="0.800" a="1.000" />
+    <sky_azimuth_col r="0.300" g="0.550" b="0.900" a="1.000" />
+    <fog_near value="800.000" />
+    <fog_far value="12000.000" />
+    <fog_density value="0.000" />
+    <fog_color r="0.400" g="0.600" b="0.900" a="1.000" />
+    <smog_density value="0.000" />
+    <bloom_intensity value="0.400" />
+    <postfx_exposure value="1.050" />
+    <postfx_contrast value="1.150" />
+  </modifier>
+</timecycle_modifier_data>

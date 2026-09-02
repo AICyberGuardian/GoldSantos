@@ -1,0 +1,21 @@
+# GTA V PS4 Clean Los Santos Visual Settings
+# Injected into update.rpf / common / data / visualsettings.dat
+# Removes brown distance haze, reduces fog density, and boosts night streetlight bloom
+
+# [Smog & Fog Parameters]
+fog.density.multiplier                   0.150000
+fog.volume.density.multiplier            0.200000
+smog.density.multiplier                  0.000000
+weather.distantfog.density               0.100000
+
+# [Night Lighting & Neon Bloom]
+light.night.streetlights.intensity       1.350000
+light.night.headlights.intensity         1.450000
+bloom.night.multiplier                   1.200000
+reflections.wetroad.intensity            1.300000
+
+# [Particle & Decal Budgets for PS4 Jaguar APU]
+decal.limit.blood                        128
+decal.lifetime.blood.seconds             120.000000
+decal.limit.bulletimpact                 256
+decal.lifetime.bulletimpact.seconds      180.000000

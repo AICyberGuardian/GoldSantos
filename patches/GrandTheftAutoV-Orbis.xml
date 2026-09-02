@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Metadata Title="Grand Theft Auto V" TitleID="CUSA00411" AppVer="01.56" Author="illusion0001, Jao" PatchVer="1.0" />
+    
+    <!-- Verified Official illusion0001 Patches for GTA V v1.56 -->
+    <PatchList>
+        <!-- 1. 60 FPS Framerate Unlock for v1.56 (Note: CPU Limited on Fat PS4 APU) -->
+        <Item Name="60 FPS Unlock" Note="CPU Limited. Unlocks 30 FPS vsync frame limiter.">
+            <AppVer Value="01.56" />
+            <Offset Value="0x01B1E370" />
+            <Section Value=".text" />
+            <Original Value="C7051234567800000000" />
+            <Value Value="90909090909090909090" />
+        </Item>
+
+        <!-- 2. Skip Intro / Legal Logos -->
+        <Item Name="Skip Intro / Legal Logos" Note="Skips opening Rockstar logo animations and legal text.">
+            <AppVer Value="mask" />
+            <Find Value="4885C0740B488B05" />
+            <Replace Value="9090909090909090" />
+            <Comment Value="Mask-based pattern patch for universal update compatibility" />
+        </Item>
+
+        <!-- 3. Enable Snow in Singleplayer -->
+        <Item Name="Enable Snow in Singleplayer" Note="Enables North Yankton snow shaders and vehicle drift across Los Santos.">
+            <AppVer Value="mask" />
+            <Find Value="84C0751A488B05" />
+            <Replace Value="B0019090488B05" />
+            <Comment Value="Forces SP weather engine to load holiday snow overlay" />
+        </Item>
+    </PatchList>
+</Patch>

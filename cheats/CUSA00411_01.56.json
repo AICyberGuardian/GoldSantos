@@ -1,0 +1,130 @@
+{
+  "name": "Grand Theft Auto V",
+  "id": "CUSA00411",
+  "version": "01.56",
+  "process": "eboot.bin",
+  "credits": "PS4-JB Modding Engine / GoldHEN v1.56 Decoupled Suite",
+  "mods": [
+    {
+      "name": "God Mode (Infinite Health & Damage Immunity)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B24A50",
+          "on": "C780B00200000000C843",
+          "off": "F30F1180B0020000"
+        }
+      ]
+    },
+    {
+      "name": "Never Wanted (Cops Completely Ignore You)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B31C80",
+          "on": "C780A400000000000000",
+          "off": "8988A4000000"
+        }
+      ]
+    },
+    {
+      "name": "Instant 5-Star Maximum Wanted Heat (Chaos Mode)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B31C80",
+          "on": "C780A400000005000000",
+          "off": "8988A4000000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo & No Weapon Reloading",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B45F20",
+          "on": "909090909090",
+          "off": "8987B8000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Armor on Damage / Equip",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B5A310",
+          "on": "C783E002000000006442",
+          "off": "F30F1183E0020000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Special Ability Bar (Franklin/Michael/Trevor)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B61940",
+          "on": "9090909090",
+          "off": "F30F1180C4000000"
+        }
+      ]
+    },
+    {
+      "name": "Explosive Bullets & Heavy Kinetic Impact",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B78210",
+          "on": "C6809001000001",
+          "off": "C6809001000000"
+        }
+      ]
+    },
+    {
+      "name": "Super Jump (Fly High into the Sky)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B83140",
+          "on": "C780B800000000008041",
+          "off": "F30F1180B8000000"
+        }
+      ]
+    },
+    {
+      "name": "Fast Run & Unlimited Sprint",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B88F00",
+          "on": "C780BC000000CDCCCC3F",
+          "off": "F30F1180BC000000"
+        }
+      ]
+    },
+    {
+      "name": "Moon Gravity (Low Gravity Vehicle Jumps)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B94C10",
+          "on": "C705801234000000A040",
+          "off": "F30F110580123400"
+        }
+      ]
+    },
+    {
+      "name": "Max Cash to Wallet ($2,147,483,647)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01BA2D40",
+          "on": "C78070010000FFFFFF7F",
+          "off": "898070010000"
+        }
+      ]
+    }
+  ]
+}

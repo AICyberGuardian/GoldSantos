@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C/C++ build artifacts
+*.o
+*.obj
+*.prx
+*.sprx
+*.elf
+*.bin
+*.a
+*.so
+*.dylib
+
+# Target archives (Never commit 50+ GB retail game archives)
+*.pkg
+*.rpf
+*.iso
+*.rar
+*.zip
+*.7z
+update.rpf
+
+# Logs & temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*~

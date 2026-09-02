@@ -1,0 +1,44 @@
+{
+  "title_id": "CUSA00411",
+  "app_version": "01.56",
+  "engine": "RAGE x86-64 Orbis",
+  "base_executable": "eboot.bin",
+  "pointers": {
+    "world_ptr": {
+      "name": "World Pointer (CPed / Player Entity)",
+      "pattern": "48 8B 05 ?? ?? ?? ?? 48 8B 48 08 48 85 C9 74 ?? 48 8B 81",
+      "mask": "xxx????xxxxxxxx?xxx",
+      "rip_offset": 3,
+      "instruction_len": 7
+    },
+    "global_ptr": {
+      "name": "Script Global Array Pointer",
+      "pattern": "4C 8D 05 ?? ?? ?? ?? 4D 8B 08 4D 85 C9 74 ?? 49 8B 01",
+      "mask": "xxx????xxxxxxxx?xxx",
+      "rip_offset": 3,
+      "instruction_len": 7
+    },
+    "native_registration_table": {
+      "name": "rage::scrEngine::g_nativeRegistrationTable",
+      "pattern": "48 8D 0D ?? ?? ?? ?? 48 8B D8 E8 ?? ?? ?? ?? 48 85 C0",
+      "mask": "xxx????xxxx????xxx",
+      "rip_offset": 3,
+      "instruction_len": 7
+    },
+    "vehicle_pool": {
+      "name": "CVehiclePool (Active Vehicle Array)",
+      "pattern": "48 8B 05 ?? ?? ?? ?? 48 8B 80 ?? ?? ?? ?? 48 85 C0 74",
+      "mask": "xxx????xxx????xxxx",
+      "rip_offset": 3,
+      "instruction_len": 7
+    }
+  },
+  "offsets_in_player_entity": {
+    "health_float": "0x0280",
+    "max_health_float": "0x02A0",
+    "armor_float": "0x14E0",
+    "wanted_level_dword": "0x0848",
+    "god_mode_byte": "0x0189",
+    "vehicle_ptr": "0x0D30"
+  }
+}

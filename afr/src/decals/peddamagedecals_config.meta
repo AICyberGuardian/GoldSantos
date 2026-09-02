@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ped Damage Decal Configuration for Persistent Arterial Gore -->
+<!-- Injected into update.rpf / x64 / data / peddamagedecals.meta -->
+<CPedDamageDecalMgr>
+  <DecalSettings>
+    <MaxBloodDecalsPerPed value="32" />
+    <BloodDecalLifetimeSeconds value="180.000000" />
+    <ExitWoundRadiusMultiplier value="2.200000" />
+    <ArterialSprayDecalChance value="0.850000" />
+    <EnablePersistentBloodPools value="true" />
+    <BloodPoolGrowthRate value="1.500000" />
+    <BloodPoolMaxRadius value="2.800000" />
+  </DecalSettings>
+</CPedDamageDecalMgr>
