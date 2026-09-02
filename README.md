@@ -14,6 +14,10 @@
 [![PS4 Firmware](https://img.shields.io/badge/PS4%20FW-11.02%20%7C%209.00%20%7C%205.05-blue.svg)](https://github.com/GoldHEN/GoldHEN)
 [![GoldHEN](https://img.shields.io/badge/GoldHEN-v2.4b-gold.svg)](https://github.com/GoldHEN/GoldHEN)
 [![GTA V Version](https://img.shields.io/badge/GTA%20V-v1.56%20(CUSA00411)-green.svg)](https://github.com/AICyberGuardian/GoldSantos)
+[![Layer 1 Engine](https://img.shields.io/badge/Layer%201%20Patches-Active%20%26%20Verified-brightgreen.svg)](patches/GrandTheftAutoV-Orbis.xml)
+[![Layer 2 Cheats](https://img.shields.io/badge/Layer%202%20Cheats-11%2F11%20Verified-brightgreen.svg)](cheats/CUSA00411_01.56.json)
+[![Layer 3 AFR](https://img.shields.io/badge/Layer%203%20AFR-Staged-yellow.svg)](afr/src/)
+[![Layer 4 PRX Menu](https://img.shields.io/badge/Layer%204%20Menu-Ported%20to%201.56-blue.svg)](plugins/lotus-base/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -24,6 +28,7 @@ GoldSantos transforms your jailbroken **PS4 (Fat CUH-1001A / Slim / Pro)** into 
 * **100% Stability:** The retail game package (`01 Base`, `02 Update v1.56`, `03 DLC`) remains pristine and unmodified. Zero kernel panics (`CE-34878-0`), zero save corruption, and zero controller R2 trigger glitches.
 * **Granular Control:** Every mod tier (engine patches, memory cheats, AFR asset overhauls, and PRX mod menus) can be toggled on or off independently.
 * **1-Click Gigabit LAN Deployment:** Push patches, cheats, and configs to `/data/GoldHEN/` over local Ethernet in seconds.
+* **Zero Duplication & Upstream Interoperability:** GoldSantos bridges verified gaps (such as missing 1.56 cheats and unmaintained PRX crossmaps) while building directly on proven foundations ([`2much4u Menu Base`](https://github.com/2much4u/PS4-GTA-V-Menu-Base), [`illusionyy Patches`](https://github.com/illusionyy/PS-Game-Patch), and [`rpf-cli`](https://github.com/VIRUXE/rpf-cli)).
 
 ---
 
@@ -49,10 +54,12 @@ Rockstar shuffles `eboot.bin` offsets, scrambles native function hashes, and shi
 GoldSantos/
 ├── README.md                           # Master Documentation & Architecture Manual
 ├── LICENSE                             # MIT Open Source License
+├── .gitignore                          # Zero-binary / DMCA compliance ignore rules
 ├── docs/                               # Technical Specifications & Reverse Engineering
 │   ├── ARCHITECTURE_AND_CRASH_ANALYSIS.md
 │   ├── NATIVE_CROSSMAP_AND_PORTING.md
-│   └── SAFE_CHAOS_ROADMAP.md
+│   ├── SAFE_CHAOS_ROADMAP.md
+│   └── UPSTREAM_AND_TOOLING.md         # Upstream ecosystem & rpf-cli integration
 ├── patches/                            # GoldHEN XML In-Memory Game Patches
 │   └── GrandTheftAutoV-Orbis.xml       # 60 FPS Unlock, Skip Intro Logos, Snow in SP
 ├── cheats/                             # GoldHEN Cheat Manager JSON & Pointer Maps
@@ -74,9 +81,22 @@ GoldSantos/
 └── tools/                              # Automated Management & Deployment Tooling
     ├── deploy_mod_stack_lan.py         # 1-Click LAN FTP Deployer to PS4
     ├── generate_156_cheat_json.py      # Cheat JSON Validator & Builder
-    ├── rpf_afr_builder.py              # AFR Workspace Stager & Inspector
+    ├── rpf_afr_builder.py              # AFR Workspace Stager & Inspector (rpf-cli ready)
     └── native_pattern_scanner.py       # AOB Signature & Cross-Map Helper
 ```
+
+---
+
+## 🚦 Roadmap & Implementation Milestones
+
+| Milestone | Deliverable | Status | Target |
+| :--- | :--- | :---: | :--- |
+| **M1: Engine Baseline** | 60 FPS Unlock, Skip Intro, Snow in SP | 🟢 Active | Verified upstream illusion0001 patch |
+| **M2: Memory Trainer** | 11-module `CUSA00411_01.56.json` | 🟢 Verified | Validated via `generate_156_cheat_json.py` |
+| **M3: AFR Asset Staging** | 220 MPH Handling, 0.00 Smog, 180s Gore Decals | 🟡 Staged | Staged in `afr/src/`, ready for packaging |
+| **M4: Native Mod Menu** | OpenOrbis C++ base with 1.56 native cross-maps | 🟡 Ported | Complete source in `plugins/lotus-base/` |
+| **M5: Headless RPF Tools**| `rpf-cli` (Rust) automated packaging wrapper | 🟢 Ready | Integrated in `tools/rpf_afr_builder.py` |
+| **M6: Upstream PR** | Submit cheat JSON to `GoldHEN_Cheat_Repository` | ⏳ Staged | Planned for next community sync |
 
 ---
 
