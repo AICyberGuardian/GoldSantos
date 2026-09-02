@@ -1,0 +1,23 @@
+#!/bin/sh
+# GoldSantos Git Pre-Commit Hook
+# Automatically blocks commits containing private IPs, secrets, personal names, or local drive paths.
+
+echo "[*] Running pre-commit privacy and secrets audit..."
+
+# Check if uv is available, else fallback to python
+if command -v uv >/dev/null 2>&1; then
+    uv run python tools/audit_privacy_and_secrets.py --staged
+elif command -v python3 >/dev/null 2>&1; then
+    python3 tools/audit_privacy_and_secrets.py --staged
+else
+    python tools/audit_privacy_and_secrets.py --staged
+fi
+
+EXIT_CODE=$?
+
+if [ $EXIT_CODE -ne 0 ]; then
+    echo "[!] Aborting commit due to security / privacy violations."
+    exit 1
+fi
+
+exit 0
