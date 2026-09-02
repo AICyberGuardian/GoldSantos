@@ -21,6 +21,7 @@ __pycache__/
 *.rar
 *.zip
 *.7z
+dist/
 update.rpf
 
 # Logs & temporary files
