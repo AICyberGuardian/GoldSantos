@@ -19,6 +19,7 @@ Primary Implementation Repository: [**`GoldSantos` (GitHub)**](https://github.co
 * **Payload:** GoldHEN v2.4b18.5+ with `game_patch.prx` and `afr.prx` support.
 * **Network Isolation:** PSN access is strictly blocked at the router/DNS layer; LAN FTP (`<PS4_IP>:2121`) is used for payload/package transfer.
 * **Decoupled Architecture Mandate:** Never use anonymous "pre-modded update PKGs" (which cause `CE-34878-0` kernel panics and disable R2 trigger input). Always run clean 1:1 retail builds (`@Opoisso893/Golemnight`) and apply modifications dynamically from the outside via GoldSantos.
+* **Privacy & Portability Invariant:** Never hardcode absolute workstation drive paths or private console LAN IPs. All repository references must use portable relative paths, and network targets must use dynamic environment variables (`PS4_IP`) or CLI arguments (`--ip`). Pre-commit hooks (`tools/audit_privacy_and_secrets.py`) automatically enforce this.
 
 ---
 
